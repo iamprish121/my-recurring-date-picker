@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.outer{
+    text-align: center;
+    justify-content: center;
+    
+}
+.outer h1{
+   margin-top: 25px; 
+  font-size: xx-large;
+    
+}
