@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# my-recurring-date-picker
+This app is ideal for situations where users need to schedule or set reminders for events that happen on a recurring basis, such as:  Setting recurring tasks in a to-do app
+Features:
+Date Selection:
 
-## Getting Started
+Users can select a start date and optionally an end date for a recurring event or task.
+Recurring Options:
 
-First, run the development server:
+Users can select different recurring patterns like:
+Daily
+Weekly
+Monthly
+Yearly
+This allows users to specify how often the event or task repeats.
+Customization of Recurrence:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Users can customize the recurrence patterns:
+For example, they can choose to repeat every X days/weeks/months/years.
+They can select specific days of the week (e.g., repeat on Mondays and Fridays).
+They can also choose options like "the second Tuesday of every month."
+Visual Preview:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A mini calendar displays a visual preview of the selected dates based on the recurrence options chosen. This helps users verify the recurring dates.
+Date Range:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Users can define a start date and an optional end date for the recurring event.
+This allows flexibility for both indefinite and finite recurring events.
+Reusable Components:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app is designed using modular, reusable components (e.g., DatePicker, RecurrenceOptions, DateRange, MiniCalendar), so it can be easily integrated into other applications or extended for further use.
+Use Case:
+This app is ideal for situations where users need to schedule or set reminders for events that happen on a recurring basis, such as:
 
-## Learn More
+Setting recurring tasks in a to-do app (e.g., a task that repeats every Friday).
+Scheduling recurring meetings or appointments (e.g., a monthly meeting on the first Monday of every month).
+Managing reminders for events that occur periodically (e.g., birthdays, anniversaries, etc.).
+It provides flexibility and customization for users to specify exactly how and when events should repeat, making it an essential feature for productivity apps or calendar-based applications.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+How it works:
+The user selects a start date and (optionally) an end date.
+The user chooses a recurrence pattern (daily, weekly, monthly, yearly).
+The user customizes the recurrence pattern (e.g., every 2 weeks on Mondays).
+The app shows a visual preview of the recurring dates in a mini-calendar.
+All chosen information is stored and managed in a state management system (Zustand in this case).
+Example Scenarios:
+A user wants to create a weekly recurring task starting from October 1st, repeating every Monday and Wednesday.
+A user wants to set a monthly reminder for a team meeting, repeating on the second Tuesday of every month.
